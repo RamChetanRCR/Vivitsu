@@ -1,55 +1,22 @@
 {
-  "patient_name": "S. SIDHARTH REDDY",
-  "age": 18,
-  "gender": "M",
-  "prescription_date": "2023-08-12",
-  "doctor_name": "Dr. Mallesh",
-  "diagnosis": "Infected epidermoid cyst",
+  "patient_name": "Ma. The Ma",
+  "age": null,
+  "gender": null,
+  "prescription_date": "2014-12-06",
+  "doctor_name": "Reynaldo O. Joson, M.D.",
+  "diagnosis": "Neck Mass",
   "disease_info": {
-    "summary": "An epidermoid cyst is a small, slow-growing, benign cyst commonly found on the skin.  When infected, they can become swollen, red, tender, and painful, and may drain pus.  They arise from the epidermis, the outer layer of the skin.",
+    "summary": "A neck mass is a lump or swelling in the neck. It can be caused by a variety of conditions, ranging from benign (non-cancerous) to malignant (cancerous). Common causes include swollen lymph nodes, thyroid nodules, cysts, and tumors.  The exact cause requires further investigation through diagnostic testing.",
     "precautions": [
-      "Keep the area clean and dry.",
-      "Avoid squeezing or picking at the cyst.",
-      "Follow the doctor's instructions regarding wound care."
+      "Avoid strenuous activities that might irritate the neck area.",
+      "Monitor for any changes in the size, shape, or consistency of the mass.",
+      "Report any new symptoms like pain, difficulty swallowing, or changes in voice."
     ]
   },
-  "medications": [
-    {
-      "medicine_name": "Cephalexin",
-      "dosage": "500mg 1-0-1",
-      "duration_days": 7,
-      "total_doses": 14,
-      "purpose": "Treat bacterial infection",
-      "notes": "Take with food",
-      "side_effects": [
-        "Nausea",
-        "Vomiting",
-        "Diarrhea",
-        "Allergic reaction"
-      ]
-    },
-    {
-      "medicine_name": "Ibuprofen",
-      "dosage": "400mg 0-1-1 PRN",
-      "duration_days": 7,
-      "total_doses": 14,
-      "purpose": "Pain and inflammation relief",
-      "notes": "Take with food or milk.  Take as needed for pain.",
-      "side_effects": [
-        "Stomach upset",
-        "Heartburn",
-        "Headache",
-        "Dizziness"
-      ]
-    }
-  ],
+  "medications": [],
   "reminders": {
-    "enabled": true,
-    "times": [
-      "08:00 AM",
-      "02:00 PM",
-      "08:00 PM"
-    ]
+    "enabled": false,
+    "times": []
   },
-  "additional_notes": "Follow up with Dr. Mallesh in one week if the infection doesn't improve.  The histopathology report confirms the diagnosis of an infected epidermoid cyst. Complete the prescribed course of antibiotics."
+  "additional_notes": "Options for further testing to determine the nature of the neck mass include biopsy (needle or excisional), ultrasound, and blood tests to assess thyroid function.  A biopsy is crucial to differentiate between benign and malignant conditions. An ultrasound can provide information about the size, shape, and location of the mass and can help guide the biopsy. Thyroid function tests are necessary to rule out thyroid disorders as a potential cause."
 }

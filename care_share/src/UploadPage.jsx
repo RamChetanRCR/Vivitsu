@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {
   Box,
   Typography,
@@ -207,9 +208,27 @@ const UploadPage = () => {
                 color: "#333",
                 fontSize: { xs: "1.2rem", sm: "1.5rem" }
               }}
+              onClick={() => navigate("/")}
             >
-              Prescription Manager
+              MediSnap
             </Typography>
+
+            <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+             
+            }}
+          >
+
+            <IconButton 
+              onClick={navigate.bind(null, "/profile")} 
+              size={isMobile ? "small" : "medium"}
+              sx={{ color: "#555" }}
+            >
+              <AccountCircleIcon />
+            </IconButton>
             <IconButton 
               onClick={handleLogout} 
               size={isMobile ? "small" : "medium"}
@@ -217,6 +236,7 @@ const UploadPage = () => {
             >
               <LogoutOutlinedIcon />
             </IconButton>
+            </Box>
           </Box>
         </motion.div>
 

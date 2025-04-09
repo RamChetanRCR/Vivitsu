@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CalendarIntegration from './CalendarIntegration'; // Adjust the path as needed
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -496,81 +497,85 @@ const Details = () => {
           </Box>
         </motion.div>
 
-        {/* Reminders Section */}
-        <motion.div variants={itemVariants}>
-          <motion.div whileHover="hover" variants={cardHoverVariants}>
-            <Paper
-              elevation={0}
-              sx={{
-                p: { xs: 2, sm: 3 },
-                mb: 3,
-                borderRadius: "16px",
-                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-                border: "1px solid #f0f0f0",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  mb: 2,
-                }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <NotificationsNoneOutlinedIcon sx={{ color: primaryColor }} />
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      fontWeight: 500,
-                      color: primaryColor,
-                      fontSize: { xs: "1rem", sm: "1.25rem" },
-                    }}
-                  >
-                    Reminders
-                  </Typography>
-                </Box>
-                
-                <Chip 
-                  icon={<NotificationsNoneOutlinedIcon sx={{ fontSize: '16px !important' }} />} 
-                  label={`${extractedData.reminders.times.length} Reminder${extractedData.reminders.times.length !== 1 ? 's' : ''}`}
-                  size="small"
-                  sx={{
-                    backgroundColor: `${primaryColor}15`,
-                    color: primaryColor,
-                    fontWeight: 500,
-                  }}
-                />
-              </Box>
+       {/* Reminders Section */}
+<motion.div variants={itemVariants}>
+  <motion.div whileHover="hover" variants={cardHoverVariants}>
+    <Paper
+      elevation={0}
+      sx={{
+        p: { xs: 2, sm: 3 },
+        mb: 3,
+        borderRadius: "16px",
+        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+        border: "1px solid #f0f0f0",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          mb: 2,
+        }}
+      >
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <NotificationsNoneOutlinedIcon sx={{ color: primaryColor }} />
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 500,
+              color: primaryColor,
+              fontSize: { xs: "1rem", sm: "1.25rem" },
+            }}
+          >
+            Reminders
+          </Typography>
+        </Box>
+        
+        <Chip 
+          icon={<NotificationsNoneOutlinedIcon sx={{ fontSize: '16px !important' }} />} 
+          label={`${extractedData.reminders.times.length} Reminder${extractedData.reminders.times.length !== 1 ? 's' : ''}`}
+          size="small"
+          sx={{
+            backgroundColor: `${primaryColor}15`,
+            color: primaryColor,
+            fontWeight: 500,
+          }}
+        />
+      </Box>
 
-              {extractedData.reminders.enabled ? (
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: 1,
-                  }}
-                >
-                  {extractedData.reminders.times.map((time, index) => (
-                    <Chip
-                      key={index}
-                      icon={<AccessTimeIcon sx={{ fontSize: '16px !important' }} />}
-                      label={time}
-                      sx={{
-                        backgroundColor: `${primaryColor}15`,
-                        color: primaryColor,
-                      }}
-                    />
-                  ))}
-                </Box>
-              ) : (
-                <Typography variant="body1" sx={{ color: "#777" }}>
-                  No reminders set for this prescription.
-                </Typography>
-              )}
-            </Paper>
-          </motion.div>
-        </motion.div>
+      {extractedData.reminders.enabled ? (
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 1,
+            mb: 2
+          }}
+        >
+          {extractedData.reminders.times.map((time, index) => (
+            <Chip
+              key={index}
+              icon={<AccessTimeIcon sx={{ fontSize: '16px !important' }} />}
+              label={time}
+              sx={{
+                backgroundColor: `${primaryColor}15`,
+                color: primaryColor,
+              }}
+            />
+          ))}
+        </Box>
+      ) : (
+        <Typography variant="body1" sx={{ color: "#777", mb: 2 }}>
+          No reminders set for this prescription.
+        </Typography>
+      )}
+      
+      {/* Add the Calendar Integration Component */}
+      <CalendarIntegration extractedData={extractedData} />
+    </Paper>
+  </motion.div>
+</motion.div>
 
         {/* Additional Notes Section */}
         {extractedData.additional_notes && (

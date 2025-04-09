@@ -1,55 +1,22 @@
 {
-  "patient_name": "S. Sidharth Reddy",
-  "age": 18,
-  "gender": "Male",
-  "prescription_date": "2023-08-12",
-  "doctor_name": "Dr. Mallesh",
-  "diagnosis": "Infected epidermoid cyst",
+  "patient_name": "Unknown",
+  "age": null,
+  "gender": "Unknown",
+  "prescription_date": null,
+  "doctor_name": "Unknown",
+  "diagnosis": "Unspecified",
   "disease_info": {
-    "summary": "An epidermoid cyst is a small, benign cyst typically filled with keratin.  When infected, it can become swollen, red, and tender.  Treatment usually involves incision and drainage, and sometimes complete surgical removal.",
-    "precautions": [
-      "Keep the area clean and dry.",
-      "Avoid squeezing or picking at the cyst.",
-      "Complete the full course of any prescribed antibiotics.",
-      "Follow up with your doctor as directed."
-    ]
+    "summary": "No diagnosis provided, so no summary available.",
+    "precautions": []
   },
-  "medications": [
-    {
-      "medicine_name": "Cephalexin",
-      "dosage": "500mg 1-0-1",
-      "duration_days": 7,
-      "total_doses": 14,
-      "purpose": "Treat bacterial infection",
-      "notes": "Take with food",
-      "side_effects": [
-        "Nausea",
-        "Vomiting",
-        "Diarrhea",
-        "Allergic reaction (rash, itching, swelling)"
-      ]
-    },
-    {
-      "medicine_name": "Ibuprofen",
-      "dosage": "400mg 0-1-1 (as needed for pain)",
-      "duration_days": 7,
-      "total_doses": 14,
-      "purpose": "Pain and inflammation relief",
-      "notes": "Take with food",
-      "side_effects": [
-        "Stomach upset",
-        "Heartburn",
-        "Headache",
-        "Dizziness"
-      ]
-    }
-  ],
+  "medications": [],
   "reminders": {
     "enabled": true,
     "times": [
       "08:00 AM",
-      "06:00 PM"
+      "02:00 PM",
+      "08:00 PM"
     ]
   },
-  "additional_notes": "Follow up appointment scheduled in one week. Please call to confirm."
+  "additional_notes": "No prescription details provided."
 }

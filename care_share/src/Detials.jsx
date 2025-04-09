@@ -1,78 +1,34 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Details = () => {
-  const data = {
-    patient_name: "Rahul Sharma",
-    age: 29,
-    gender: "Male",
-    prescription_date: "2025-04-07",
-    doctor_name: "Dr. Anjali Mehta",
-    diagnosis: "Typhoid Fever",
-    disease_info: {
-      summary:
-        "Typhoid fever is a bacterial infection caused by Salmonella typhi. It spreads through contaminated food and water.",
-      precautions: [
-        "Drink only boiled or bottled water.",
-        "Avoid street food.",
-        "Maintain good hygiene.",
-        "Complete full course of antibiotics.",
-      ],
-    },
-    medications: [
-      {
-        medicine_name: "Cefixime 200mg",
-        dosage: "1-0-1",
-        duration_days: 7,
-        total_doses: 14,
-        purpose: "Antibiotic to treat bacterial infection",
-        notes: "Take after food",
-        side_effects: ["Nausea", "Diarrhea", "Headache"],
-      },
-      {
-        medicine_name: "Paracetamol 500mg",
-        dosage: "1-1-1",
-        duration_days: 5,
-        total_doses: 15,
-        purpose: "To reduce fever and pain",
-        notes: "Take only when temperature is above 100°F",
-        side_effects: ["Drowsiness", "Liver issues (if overdosed)"],
-      },
-      {
-        medicine_name: "ORS Sachet",
-        dosage: "1 after every loose motion",
-        duration_days: "As needed",
-        total_doses: "Variable",
-        purpose: "To rehydrate body",
-        notes: "Mix with 1 glass of clean water",
-        side_effects: ["None"],
-      },
-    ],
-    reminders: {
-      enabled: true,
-      times: ["08:00 AM", "02:00 PM", "08:00 PM"],
-    },
-    additional_notes: "Avoid oily food. Rest well and maintain hydration.",
-  };
+  const location = useLocation();
+  const extractedData = location.state?.extractedData || null;
+
+  if (!extractedData) {
+    return <h2 style={{ textAlign: "center", color: "red" }}>No data available to display.</h2>;
+  }
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
       <h1 style={{ textAlign: "center", color: "#4CAF50" }}>Patient Details</h1>
+      
       <div style={{ marginBottom: "20px" }}>
         <h2>Basic Information</h2>
-        <p><strong>Patient Name:</strong> {data.patient_name}</p>
-        <p><strong>Age:</strong> {data.age}</p>
-        <p><strong>Gender:</strong> {data.gender}</p>
-        <p><strong>Prescription Date:</strong> {data.prescription_date}</p>
-        <p><strong>Doctor Name:</strong> {data.doctor_name}</p>
-        <p><strong>Diagnosis:</strong> {data.diagnosis}</p>
+        <p><strong>Patient Name:</strong> {extractedData.patient_name}</p>
+        <p><strong>Age:</strong> {extractedData.age}</p>
+        <p><strong>Gender:</strong> {extractedData.gender}</p>
+        <p><strong>Prescription Date:</strong> {extractedData.prescription_date}</p>
+        <p><strong>Doctor Name:</strong> {extractedData.doctor_name}</p>
+        <p><strong>Diagnosis:</strong> {extractedData.diagnosis}</p>
       </div>
 
       <div style={{ marginBottom: "20px" }}>
         <h2>Disease Information</h2>
-        <p><strong>Summary:</strong> {data.disease_info.summary}</p>
+        <p><strong>Summary:</strong> {extractedData.disease_info.summary}</p>
         <h3>Precautions:</h3>
         <ul>
-          {data.disease_info.precautions.map((precaution, index) => (
+          {extractedData.disease_info.precautions.map((precaution, index) => (
             <li key={index}>{precaution}</li>
           ))}
         </ul>
@@ -80,7 +36,7 @@ const Details = () => {
 
       <div style={{ marginBottom: "20px" }}>
         <h2>Medications</h2>
-        {data.medications.map((medication, index) => (
+        {extractedData.medications.map((medication, index) => (
           <div
             key={index}
             style={{
@@ -103,9 +59,9 @@ const Details = () => {
 
       <div style={{ marginBottom: "20px" }}>
         <h2>Reminders</h2>
-        {data.reminders.enabled ? (
+        {extractedData.reminders.enabled ? (
           <ul>
-            {data.reminders.times.map((time, index) => (
+            {extractedData.reminders.times.map((time, index) => (
               <li key={index}>{time}</li>
             ))}
           </ul>
@@ -116,7 +72,7 @@ const Details = () => {
 
       <div style={{ marginBottom: "20px" }}>
         <h2>Additional Notes</h2>
-        <p>{data.additional_notes}</p>
+        <p>{extractedData.additional_notes}</p>
       </div>
     </div>
   );

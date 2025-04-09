@@ -1,17 +1,16 @@
 {
-  "patient_name": "S. Sidharth Reddy",
+  "patient_name": "S. SIDHARTH REDDY",
   "age": 18,
-  "gender": "Male",
+  "gender": "M",
   "prescription_date": "2023-08-12",
   "doctor_name": "Dr. Mallesh",
   "diagnosis": "Infected epidermoid cyst",
   "disease_info": {
-    "summary": "An epidermoid cyst is a small, benign, closed sac that develops under the skin.  It's typically filled with keratin (a cheese-like substance). When infected, these cysts become red, swollen, and tender, and may drain pus.",
+    "summary": "An epidermoid cyst is a small, slow-growing, benign cyst commonly found on the skin.  When infected, they can become swollen, red, tender, and painful, and may drain pus.  They arise from the epidermis, the outer layer of the skin.",
     "precautions": [
       "Keep the area clean and dry.",
       "Avoid squeezing or picking at the cyst.",
-      "Apply warm compresses as directed by the doctor.",
-      "Complete the full course of antibiotics if prescribed."
+      "Follow the doctor's instructions regarding wound care."
     ]
   },
   "medications": [
@@ -19,25 +18,25 @@
       "medicine_name": "Cephalexin",
       "dosage": "500mg 1-0-1",
       "duration_days": 7,
-      "total_doses": 21,
-      "purpose": "Treat the bacterial infection",
+      "total_doses": 14,
+      "purpose": "Treat bacterial infection",
       "notes": "Take with food",
       "side_effects": [
-        "Diarrhea",
         "Nausea",
-        "Abdominal pain",
-        "Allergic reactions (rash, itching, swelling)"
+        "Vomiting",
+        "Diarrhea",
+        "Allergic reaction"
       ]
     },
     {
       "medicine_name": "Ibuprofen",
-      "dosage": "400mg 1-1-1",
-      "duration_days": 5,
-      "total_doses": 15,
+      "dosage": "400mg 0-1-1 PRN",
+      "duration_days": 7,
+      "total_doses": 14,
       "purpose": "Pain and inflammation relief",
-      "notes": "Take with food",
+      "notes": "Take with food or milk.  Take as needed for pain.",
       "side_effects": [
-        "Upset stomach",
+        "Stomach upset",
         "Heartburn",
         "Headache",
         "Dizziness"
@@ -52,5 +51,5 @@
       "08:00 PM"
     ]
   },
-  "additional_notes": "Follow-up appointment recommended after completion of medication course. Surgical excision may be considered if the infection doesn't resolve or recurs."
+  "additional_notes": "Follow up with Dr. Mallesh in one week if the infection doesn't improve.  The histopathology report confirms the diagnosis of an infected epidermoid cyst. Complete the prescribed course of antibiotics."
 }

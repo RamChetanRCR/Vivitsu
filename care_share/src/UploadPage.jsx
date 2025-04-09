@@ -25,14 +25,13 @@ const UploadPage = () => {
       });
 
       if (response.ok) {
-        // Assuming the Flask endpoint returns a success message or data
-        const data = await response.json();
-        console.log("File uploaded successfully:", data);
+        const result = await response.json();
+        console.log("File uploaded and processed successfully:", result);
 
-        // Navigate to the Processed Data page
-        navigate("/processed-data", { state: { processedData: data } });
+        // Navigate to the Details page with the extracted data
+        navigate("/processed-data", { state: { extractedData: JSON.parse(result.data) } });
       } else {
-        alert("Failed to upload the file.");
+        alert("Failed to upload and process the file.");
       }
     } catch (error) {
       console.error("Error uploading file:", error);

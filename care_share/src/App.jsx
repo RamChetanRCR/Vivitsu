@@ -46,6 +46,7 @@ const App = () => {
 
 
         <Route path="/processed-data" element={<Details />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );

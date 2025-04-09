@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Ignore the Google Cloud key
+care_share/backend/gcloud_key.json
+
+# Ignore the Firebase config file
+care_share/src/firebase.js

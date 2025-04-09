@@ -6,11 +6,11 @@
   "doctor_name": "Reynaldo O. Joson, M.D.",
   "diagnosis": "Neck Mass",
   "disease_info": {
-    "summary": "A neck mass is a lump or swelling in the neck. It can be caused by a variety of conditions, ranging from benign (non-cancerous) to malignant (cancerous). Common causes include swollen lymph nodes, thyroid nodules, cysts, and tumors.  The exact cause requires further investigation through diagnostic testing.",
+    "summary": "A neck mass is a lump or swelling in the neck.  Many neck masses are benign (not cancerous), but some can be cancerous. Further investigation is necessary to determine the cause and appropriate treatment. The duration of the mass (2 weeks) and lack of associated symptoms like pain are positive indicators, but not definitive.",
     "precautions": [
-      "Avoid strenuous activities that might irritate the neck area.",
-      "Monitor for any changes in the size, shape, or consistency of the mass.",
-      "Report any new symptoms like pain, difficulty swallowing, or changes in voice."
+      "Avoid manipulating or applying pressure to the mass.",
+      "Monitor for changes in size, shape, or associated symptoms like pain, difficulty swallowing, or hoarseness.",
+      "Follow up with the recommended diagnostic testing and specialist consultation."
     ]
   },
   "medications": [],
@@ -18,5 +18,5 @@
     "enabled": false,
     "times": []
   },
-  "additional_notes": "Options for further testing to determine the nature of the neck mass include biopsy (needle or excisional), ultrasound, and blood tests to assess thyroid function.  A biopsy is crucial to differentiate between benign and malignant conditions. An ultrasound can provide information about the size, shape, and location of the mass and can help guide the biopsy. Thyroid function tests are necessary to rule out thyroid disorders as a potential cause."
+  "additional_notes": "Further diagnostic testing is required to determine the nature of the neck mass. Options include fine needle aspiration biopsy, ultrasound, and/or consultation with a specialist. Based on the physician's notes, ultrasound to assess thyroid and surrounding structures seems highly probable, followed potentially by a biopsy depending on the ultrasound results."
 }

@@ -1,22 +1,55 @@
 {
-  "patient_name": "Ma. The Ma",
-  "age": null,
-  "gender": null,
-  "prescription_date": "2014-12-06",
-  "doctor_name": "Reynaldo O. Joson, M.D.",
-  "diagnosis": "Neck Mass",
+  "patient_name": "S. Sidharth Reddy",
+  "age": 18,
+  "gender": "Male",
+  "prescription_date": "2023-08-12",
+  "doctor_name": "Dr. Mallesh",
+  "diagnosis": "Infected epidermoid cyst",
   "disease_info": {
-    "summary": "A neck mass is a lump or swelling in the neck.  Many neck masses are benign (not cancerous), but some can be cancerous. Further investigation is necessary to determine the cause and appropriate treatment. The duration of the mass (2 weeks) and lack of associated symptoms like pain are positive indicators, but not definitive.",
+    "summary": "An epidermoid cyst is a small, benign cyst typically filled with keratin.  When infected, it can become swollen, red, and tender.  Treatment usually involves incision and drainage, and sometimes complete surgical removal.",
     "precautions": [
-      "Avoid manipulating or applying pressure to the mass.",
-      "Monitor for changes in size, shape, or associated symptoms like pain, difficulty swallowing, or hoarseness.",
-      "Follow up with the recommended diagnostic testing and specialist consultation."
+      "Keep the area clean and dry.",
+      "Avoid squeezing or picking at the cyst.",
+      "Complete the full course of any prescribed antibiotics.",
+      "Follow up with your doctor as directed."
     ]
   },
-  "medications": [],
+  "medications": [
+    {
+      "medicine_name": "Cephalexin",
+      "dosage": "500mg 1-0-1",
+      "duration_days": 7,
+      "total_doses": 14,
+      "purpose": "Treat bacterial infection",
+      "notes": "Take with food",
+      "side_effects": [
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Allergic reaction (rash, itching, swelling)"
+      ]
+    },
+    {
+      "medicine_name": "Ibuprofen",
+      "dosage": "400mg 0-1-1 (as needed for pain)",
+      "duration_days": 7,
+      "total_doses": 14,
+      "purpose": "Pain and inflammation relief",
+      "notes": "Take with food",
+      "side_effects": [
+        "Stomach upset",
+        "Heartburn",
+        "Headache",
+        "Dizziness"
+      ]
+    }
+  ],
   "reminders": {
-    "enabled": false,
-    "times": []
+    "enabled": true,
+    "times": [
+      "08:00 AM",
+      "06:00 PM"
+    ]
   },
-  "additional_notes": "Further diagnostic testing is required to determine the nature of the neck mass. Options include fine needle aspiration biopsy, ultrasound, and/or consultation with a specialist. Based on the physician's notes, ultrasound to assess thyroid and surrounding structures seems highly probable, followed potentially by a biopsy depending on the ultrasound results."
+  "additional_notes": "Follow up appointment scheduled in one week. Please call to confirm."
 }

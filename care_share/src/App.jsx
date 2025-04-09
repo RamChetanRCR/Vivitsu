@@ -33,7 +33,7 @@ const App = () => {
             <div>
               {user ? (
                 <>
-                  <h1>Hello, {user.displayName || user.email}!</h1>
+                  
                   <UploadPage />
                 </>
               ) : (

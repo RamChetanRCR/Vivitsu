@@ -1,0 +1,6 @@
+google-cloud-vision==3.10.1
+google-generativeai==0.8.4
+google-auth==2.38.0
+google-api-core==2.24.2
+protobuf==5.29.4
+requests==2.32.3

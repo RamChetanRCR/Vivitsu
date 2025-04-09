@@ -1,0 +1,56 @@
+{
+  "patient_name": "S. Sidharth Reddy",
+  "age": 18,
+  "gender": "Male",
+  "prescription_date": "2023-08-12",
+  "doctor_name": "Dr. Mallesh",
+  "diagnosis": "Infected epidermoid cyst",
+  "disease_info": {
+    "summary": "An epidermoid cyst is a small, benign, closed sac that develops under the skin.  It's typically filled with keratin (a cheese-like substance). When infected, these cysts become red, swollen, and tender, and may drain pus.",
+    "precautions": [
+      "Keep the area clean and dry.",
+      "Avoid squeezing or picking at the cyst.",
+      "Apply warm compresses as directed by the doctor.",
+      "Complete the full course of antibiotics if prescribed."
+    ]
+  },
+  "medications": [
+    {
+      "medicine_name": "Cephalexin",
+      "dosage": "500mg 1-0-1",
+      "duration_days": 7,
+      "total_doses": 21,
+      "purpose": "Treat the bacterial infection",
+      "notes": "Take with food",
+      "side_effects": [
+        "Diarrhea",
+        "Nausea",
+        "Abdominal pain",
+        "Allergic reactions (rash, itching, swelling)"
+      ]
+    },
+    {
+      "medicine_name": "Ibuprofen",
+      "dosage": "400mg 1-1-1",
+      "duration_days": 5,
+      "total_doses": 15,
+      "purpose": "Pain and inflammation relief",
+      "notes": "Take with food",
+      "side_effects": [
+        "Upset stomach",
+        "Heartburn",
+        "Headache",
+        "Dizziness"
+      ]
+    }
+  ],
+  "reminders": {
+    "enabled": true,
+    "times": [
+      "08:00 AM",
+      "02:00 PM",
+      "08:00 PM"
+    ]
+  },
+  "additional_notes": "Follow-up appointment recommended after completion of medication course. Surgical excision may be considered if the infection doesn't resolve or recurs."
+}
